@@ -40,4 +40,7 @@ input_str = input().strip()
 initial_state = [int(num) if num.isdigit() else 'x' for num in input_str.split()]
 
 result = solve_puzzle(initial_state)
-print(result if result != -1 else 0)
+if result != -1:
+    print(result)
+else:
+    print(0)
